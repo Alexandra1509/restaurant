@@ -1,0 +1,118 @@
+.chapters {
+    // text-align: center;
+    margin-bottom: 2.5rem;
+
+}
+
+.chapters__content {
+    display: flex;
+    margin: 7.5rem 0;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 800px) {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.chapters__header {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    margin-top: -0.8rem;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+.chapters__info {
+    width: 55%;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+.chapters__title {
+    padding-bottom: 0.5rem;
+    @include titlefont;
+    padding-top: 1rem;
+}
+
+.chapters__text {
+    display: inline-block;
+    @include textfont;
+    padding-bottom: 1rem;
+}
+
+.chapters__header--2 {
+    @media screen and (max-width: 800px) {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+.chapters__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 3.5rem;
+
+}
+
+.chapters__col {
+    width: 50%;
+    height: 600px;
+    position: relative;
+
+    &:hover>.inside-text {
+        opacity: 90%;
+        transition: .3s ease-in-out;
+    }
+}
+
+.chapters__col--1 {
+    background-image: url("./../../img/bar-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s ease-in-out;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.chapters__col--2 {
+    background-image: url("./../../img/shop-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.inside-text {
+    padding-left: 50%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: "GillSansRegular";
+    color: $white;
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    opacity: 0;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-left: -2rem;
+}

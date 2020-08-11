@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    cursor: none;
+}
+
+body {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    font-family: "GillSansRegular";
+    font-size: 1rem;
+    background-color: #fafafa;
+    // overflow: hidden;
+}
+
+.body.no-scroll {
+    overflow: hidden
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 160%;
+
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Parisienne";
+    font-size: 6rem;
+
+    @media screen and (max-width: 800px) {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-family: "GillSansRegular";
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-family: "GillSansRegular";
+    font-size: 2rem;
+}
+
+@font-face {
+    font-family: "GillSansRegular";
+    // src: url("../fonts/GillSansRegular/GillSansRegular.eot");
+    // src: url("../fonts/GillSansRegular/GillSansRegular.eot?#iefix")format("embedded-opentype"),
+    //     url("../fonts/GillSansRegular/GillSansRegular.woff") format("woff"),
+    //     url("../fonts/GillSansRegular/GillSansRegular.ttf") format("truetype");
+    src: url("./../../fonts/GillSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
